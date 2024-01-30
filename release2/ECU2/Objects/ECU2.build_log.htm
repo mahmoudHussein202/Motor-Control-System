@@ -1,0 +1,280 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mahmoud hussein, ain shams, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\upwork\Motor Control System\releases\release 2\ECU2\1\ECU2.uvprojx
+Project File Date:  01/23/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+OS/OS.c(3): warning: In file included from...
+OS/OS.h(19): warning: In file included from...
+OS/../ADC/adc.h(7): warning: no newline at end of file [-Wnewline-eof]
+    7 | #endif
+      |       ^
+OS/OS.c(3): warning: In file included from...
+OS/OS.h(26): warning: no newline at end of file [-Wnewline-eof]
+   26 | #endif
+      |       ^
+OS/OS.c(18): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   18 |         float voltage_0 = 0;
+      |               ^
+OS/OS.c(32): warning: 'return' will never be executed [-Wunreachable-code-return]
+   32 |                 return(0);
+      |                        ^
+4 warnings generated.
+compiling OS.c...
+compiling RGB.c...
+SYSTICK/systick.c(44): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   44 |                         ECU2_Send_temp(test_ECU2_temp);
+      |                         ~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~
+SYSTICK/systick.c(53): warning: no newline at end of file [-Wnewline-eof]
+   53 |  }
+      |   ^
+SYSTICK/systick.c(11): warning: unused variable 'Glob_p2SendToPc' [-Wunused-variable]
+   11 | static p2f Glob_p2SendToPc = NULL ; 
+      |            ^~~~~~~~~~~~~~~
+SYSTICK/systick.c(12): warning: unused variable 'Glob_p2CheckCom' [-Wunused-variable]
+   12 | static p2f Glob_p2CheckCom = NULL ; 
+      |            ^~~~~~~~~~~~~~~
+4 warnings generated.
+compiling systick.c...
+OS/OS_Backend.c(4): warning: In file included from...
+OS/OS.h(19): warning: In file included from...
+OS/../ADC/adc.h(7): warning: no newline at end of file [-Wnewline-eof]
+    7 | #endif
+      |       ^
+OS/OS_Backend.c(4): warning: In file included from...
+OS/OS.h(26): warning: no newline at end of file [-Wnewline-eof]
+   26 | #endif
+      |       ^
+OS/OS_Backend.c(13): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   13 | void can_start_recieving_ack()
+      |                             ^
+      |                              void
+OS/OS_Backend.c(35): warning: no newline at end of file [-Wnewline-eof]
+   35 | }
+      |  ^
+OS/OS_Backend.c(8): warning: no previous extern declaration for non-static variable 'sending_volt_flag' [-Wmissing-variable-declarations]
+    8 | uint8_t sending_volt_flag;
+      |         ^
+OS/OS_Backend.c(8): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+    8 | uint8_t sending_volt_flag;
+      | ^
+OS/OS_Backend.c(9): warning: no previous extern declaration for non-static variable 'test_ECU2_temp' [-Wmissing-variable-declarations]
+    9 | uint8_t test_ECU2_temp;
+      |         ^
+OS/OS_Backend.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+    9 | uint8_t test_ECU2_temp;
+      | ^
+OS/OS_Backend.c(10): warning: no previous extern declaration for non-static variable 'test_ECU2_volt' [-Wmissing-variable-declarations]
+   10 | uint8_t test_ECU2_volt;
+      |         ^
+OS/OS_Backend.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   10 | uint8_t test_ECU2_volt;
+      | ^
+7 warnings generated.
+compiling OS_Backend.c...
+CAN/Can.c(23): warning: no previous extern declaration for non-static variable 'cut_off_counter' [-Wmissing-variable-declarations]
+   23 | uint32_t cut_off_counter = 0 ;
+      |          ^
+CAN/Can.c(23): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   23 | uint32_t cut_off_counter = 0 ;
+      | ^
+CAN/Can.c(26): warning: no previous extern declaration for non-static variable 'TX_ui32MsgCount' [-Wmissing-variable-declarations]
+   26 | volatile uint32_t TX_ui32MsgCount = 0;
+      |                   ^
+CAN/Can.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   26 | volatile uint32_t TX_ui32MsgCount = 0;
+      |          ^
+CAN/Can.c(27): warning: no previous extern declaration for non-static variable 'RX_ui32MsgCount' [-Wmissing-variable-declarations]
+   27 | volatile uint32_t RX_ui32MsgCount = 0;
+      |                   ^
+CAN/Can.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   27 | volatile uint32_t RX_ui32MsgCount = 0;
+      |          ^
+CAN/Can.c(28): warning: no previous extern declaration for non-static variable 'g_bRXFlag' [-Wmissing-variable-declarations]
+   28 | volatile bool g_bRXFlag = 0;
+      |               ^
+CAN/Can.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   28 | volatile bool g_bRXFlag = 0;
+      |          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+CAN/Can.c(29): warning: no previous extern declaration for non-static variable 'TX_ErrFlag' [-Wmissing-variable-declarations]
+   29 | volatile bool TX_ErrFlag = 0;
+      |               ^
+CAN/Can.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   29 | volatile bool TX_ErrFlag = 0;
+      |          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+CAN/Can.c(30): warning: no previous extern declaration for non-static variable 'RX_ErrFlag' [-Wmissing-variable-declarations]
+   30 | volatile bool RX_ErrFlag = 0;
+      |               ^
+CAN/Can.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   30 | volatile bool RX_ErrFlag = 0;
+      |          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+CAN/Can.c(31): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   31 | void Can_Driv_init()
+      |                   ^
+      |                    void
+CAN/Can.c(70): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   70 | uint32_t can_recevie_msg_sync()
+      |                              ^
+      |                               void
+CAN/Can.c(78): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   78 | uint32_t can_recevie_msg_Async()
+      |                               ^
+      |                                void
+CAN/Can.c(92): warning: no previous prototype for function 'CAN0_Handler' [-Wmissing-prototypes]
+   92 | void CAN0_Handler(void)
+      |      ^
+CAN/Can.c(92): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   92 | void CAN0_Handler(void)
+      | ^
+      | static 
+CAN/Can.c(18): warning: no previous extern declaration for non-static variable 'tx_msg' [-Wmissing-variable-declarations]
+   18 | tCANMsgObject tx_msg;
+      |               ^
+CAN/Can.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   18 | tCANMsgObject tx_msg;
+      | ^
+CAN/Can.c(19): warning: no previous extern declaration for non-static variable 'tx_data' [-Wmissing-variable-declarations]
+   19 | uint8_t tx_data;
+      |         ^
+CAN/Can.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   19 | uint8_t tx_data;
+      | ^
+CAN/Can.c(20): warning: no previous extern declaration for non-static variable 'rx_msg' [-Wmissing-variable-declarations]
+   20 | tCANMsgObject rx_msg;
+      |               ^
+CAN/Can.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   20 | tCANMsgObject rx_msg;
+      | ^
+CAN/Can.c(21): warning: no previous extern declaration for non-static variable 'rx_data' [-Wmissing-variable-declarations]
+   21 | uint8_t rx_data;
+      |         ^
+CAN/Can.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   21 | uint8_t rx_data;
+      | ^
+CAN/Can.c(22): warning: no previous extern declaration for non-static variable 'sending_flag' [-Wmissing-variable-declarations]
+   22 | uint8_t sending_flag;
+      |         ^
+CAN/Can.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   22 | uint8_t sending_flag;
+      | ^
+15 warnings generated.
+compiling Can.c...
+assembling startup_TM4C123.s...
+ADC/adc.c(5): warning: non-portable path to file '"TM4C123GH6PM.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+    5 | #include "tm4c123gh6pm.h"
+      |          ^~~~~~~~~~~~~~~~
+      |          "TM4C123GH6PM.h"
+ADC/adc.c(8): warning: In file included from...
+ADC/adc.h(7): warning: no newline at end of file [-Wnewline-eof]
+    7 | #endif
+      |       ^
+ADC/adc.c(17): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   17 | void ADC_DRIV_Init()
+      |                   ^
+      |                    void
+ADC/adc.c(26): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   26 |     GPIOE->DEN &= ~(1<<3);        /* disable digital function */
+      |                ~~ ^~~~~~~
+ADC/adc.c(27): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   27 |                 GPIOE->DEN &= ~(1<<2); 
+      |                            ~~ ^~~~~~~
+ADC/adc.c(32): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   32 |     ADC0->ACTSS &= ~(1<<3);        /* disable SS3 during configuration */
+      |                 ~~ ^~~~~~~
+ADC/adc.c(33): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   33 |     ADC0->EMUX &= ~0xF000;    /* software trigger conversion */
+      |                ~~ ^~~~~~~
+ADC/adc.c(52): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+   52 |                                 adc_1_voltage = (adc_value * 0.0008);   /* convert digital value back into voltage */
+      |                                               ~  ~~~~~~~~~~^~~~~~~~
+ADC/adc.c(62): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+   62 |                 adc_0_voltage = (adc_value * 0.0008);   /* convert digital value back into voltage */
+      |                               ~  ~~~~~~~~~~^~~~~~~~
+ADC/adc.c(13): warning: no previous extern declaration for non-static variable 'adc_value' [-Wmissing-variable-declarations]
+   13 | unsigned int adc_value;
+      |              ^
+ADC/adc.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   13 | unsigned int adc_value;
+      | ^
+ADC/adc.c(14): warning: no previous extern declaration for non-static variable 'adc_1_voltage' [-Wmissing-variable-declarations]
+   14 | float adc_1_voltage ;
+      |       ^
+ADC/adc.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   14 | float adc_1_voltage ;
+      | ^
+ADC/adc.c(15): warning: no previous extern declaration for non-static variable 'adc_0_voltage' [-Wmissing-variable-declarations]
+   15 | float adc_0_voltage ;
+      |       ^
+ADC/adc.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   15 | float adc_0_voltage ;
+      | ^
+12 warnings generated.
+compiling adc.c...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=5472 RO-data=2100 RW-data=620 ZI-data=696  
+".\Objects\ECU2.axf" - 0 Error(s), 42 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: Keil::Device:Startup@1.0.1
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+      Include file:  Device/Include/TM4C123/TM4C123.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
