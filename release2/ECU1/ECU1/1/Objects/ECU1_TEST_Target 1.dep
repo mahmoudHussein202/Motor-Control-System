@@ -1,0 +1,92 @@
+Dependencies for Project 'ECU1_TEST', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6210000::V6.21::ARMCLANG
+F (.\OS\OS.c)(0x65AECCD2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/os.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\SYSCLK\sysclk.h)(0x00000000)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x65A65075)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x60FEFD45)
+I (OS\..\systick\systick.h-S\..\can\CAN.heS\..\uart\uart_config.h)(0x00000000)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\RGB\RGB.h)(0x00000000)
+F (.\OS\OS.h)(0x65AED7DC)()
+F (.\OS\OS_backend.c)(0x65AED03E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/os_backend.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569F662)
+I (C:\Keil_v5\ARM\ARMCLANG\include\SYSCLK\sysclk.h)(0x00000000)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x65A65075)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x60FEFD45)
+I (C:\Keil_v5\ARM\ARMCLANG\include\CAN\Can.h)(0x00000000)
+I (OS\..\UART\uart_config.h)(0x65AC5143)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\RGB\RGB.h)(0x00000000)
+F (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib)(0x60FEFD45)()
+F (.\CAN\Can.c)(0x65AECCB1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/can.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569F662)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6569F662)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_can.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_ints.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\can.h)(0x65AAA21B)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x65A81915)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x65A65075)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\RGB\RGB.h)(0x00000000)
+I (CAN\..\OS\OS.h_AN\..\OS\..\SYSCLK\sysclk.h)(0x00000000)
+F (.\CAN\Can.h)(0x65AE70FC)()
+F (.\UART\uart_config.c)(0x65AC4AC1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/uart_config.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569F662)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6569F662)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\tm4c123gh6pm.h)(0x550FE22C)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\core_cm4.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\cmsis_version.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\cmsis_compiler.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x65802698)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569F660)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6F216)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x65A65075)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\can.h)(0x65AAA21B)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h)(0x65A81915)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\uart.h)(0x65A81B88)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_ints.h)(0x60FEFD45)
+F (.\UART\uart_config.h)(0x65AC5143)()
+F (.\SYSCLK\sysclk.c)(0x65AC4AAE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/sysclk.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569F662)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6569F662)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x65A65075)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x60FEFD45)
+F (.\SYSCLK\sysclk.h)(0x65AC4AB0)()
+F (.\SYSTICK\systick.c)(0x65AC4ABA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/systick.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569F662)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6569F662)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\systick.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h)(0x65A65075)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\timer.hhYSTICK\systick.h)(0x00000000)
+I (SYSTICK\..\OS\OS.heYSTICK\..\OS\..\SYSCLK\sysclk.h)(0x00000000)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\inc\hw_types.h)(0x60FEFD45)
+I (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h)(0x60FEFD45)
+F (.\SYSTICK\systick.h)(0x65AC4ABB)()
+F (.\RGB\RGB.c)(0x65ACCC3F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/rgb.o -MD)
+F (.\RGB\RGB.h)(0x65ACCBE8)()
+F (.\RGB\ttttm4c123gh6pm.h)(0x65AC4A98)()
+F (RTE/Device/TM4C123GH6PM/startup_TM4C123.s)(0x51B6F216)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-Wa,armasm,--pd,"__UVISION_VERSION SETA 539" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_tm4c123.o)
+F (RTE/Device/TM4C123GH6PM/system_TM4C123.c)(0x550A65DA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I C:/ti/TivaWare_C_Series-2.1.4.178 -std=c11-I./RTE/_Target_1-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include"-I"C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123"-D__UVISION_VERSION="539" -D_RTE_ -DTM4C123GH6PM -D_RTE_-o ./objects/system_tm4c123.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6569F662)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530F0106)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\core_cm4.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\cmsis_version.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\cmsis_compiler.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x65802698)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x6569F660)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x65802698)
+I (C:\Users\Mahmoud Hussein\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6F216)

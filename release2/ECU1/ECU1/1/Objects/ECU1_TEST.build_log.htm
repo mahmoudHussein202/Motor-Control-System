@@ -1,0 +1,810 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mahmoud hussein, ain shams, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\upwork\Motor Control System\releases\release 2\ECU1\1\ECU1_TEST.uvprojx
+Project File Date:  01/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+OS/OS.c(1): warning: In file included from...
+OS/OS.h(89): warning: no newline at end of file [-Wnewline-eof]
+   89 | #endif
+      |       ^
+OS/OS.c(2): warning: non-portable path to file '"../SYSTICK/systick.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+    2 | #include "../systick/systick.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+      |          "../SYSTICK/systick.h"
+OS/OS.c(3): warning: non-portable path to file '"../SYSCLK/sysclk.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+    3 | #include "../sysclk/sysclk.h"
+      |          ^~~~~~~~~~~~~~~~~~~~
+      |          "../SYSCLK/sysclk.h"
+OS/OS.c(4): warning: non-portable path to file '"../CAN/Can.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+    4 | #include "../can/CAN.h"
+      |          ^~~~~~~~~~~~~~
+      |          "../CAN/Can.h"
+OS/OS.c(5): warning: non-portable path to file '"../UART/uart_config.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+    5 | #include "../uart/uart_config.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+      |          "../UART/uart_config.h"
+OS/OS.c(5): warning: In file included from...
+OS/../uart/uart_config.h(32): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   32 | void UART_INIT();
+      |               ^
+      |                void
+OS/OS.c(17): warning: no previous extern declaration for non-static variable 'test_ECU2_temp' [-Wmissing-variable-declarations]
+   17 | uint32_t test_ECU2_temp = 25;
+      |          ^
+OS/OS.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   17 | uint32_t test_ECU2_temp = 25;
+      | ^
+OS/OS.c(18): warning: no previous extern declaration for non-static variable 'getKnownVoltage' [-Wmissing-variable-declarations]
+   18 | uint32_t getKnownVoltage = 3 ; 
+      |          ^
+OS/OS.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   18 | uint32_t getKnownVoltage = 3 ; 
+      | ^
+OS/OS.c(13): warning: no previous extern declaration for non-static variable 'ECU2_current_temp' [-Wmissing-variable-declarations]
+   13 | uint32_t ECU2_current_temp;
+      |          ^
+OS/OS.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   13 | uint32_t ECU2_current_temp;
+      | ^
+9 warnings generated.
+compiling OS.c...
+SYSCLK/sysclk.c(18): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   18 |     ReturnState retVal ;
+      |                 ^
+SYSCLK/sysclk.c(41): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   41 |     ReturnState retVal ;
+      |                 ^
+SYSCLK/sysclk.c(52): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   52 |     ReturnState retVal ;
+      |                 ^
+3 warnings generated.
+compiling sysclk.c...
+SYSTICK/systick.c(7): warning: In file included from...
+SYSTICK/../OS/OS.h(89): warning: no newline at end of file [-Wnewline-eof]
+   89 | #endif
+      |       ^
+SYSTICK/systick.c(59): warning: no newline at end of file [-Wnewline-eof]
+   59 |  }
+      |   ^
+2 warnings generated.
+compiling systick.c...
+assembling startup_TM4C123.s...
+compiling RGB.c...
+CAN/Can.c(17): warning: In file included from...
+CAN/../OS/OS.h(89): warning: no newline at end of file [-Wnewline-eof]
+   89 | #endif
+      |       ^
+CAN/Can.c(36): warning: no previous extern declaration for non-static variable 'TX_ui32MsgCount' [-Wmissing-variable-declarations]
+   36 | volatile uint32_t TX_ui32MsgCount = 0;
+      |                   ^
+CAN/Can.c(36): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   36 | volatile uint32_t TX_ui32MsgCount = 0;
+      |          ^
+CAN/Can.c(37): warning: no previous extern declaration for non-static variable 'RX_ui32MsgCount' [-Wmissing-variable-declarations]
+   37 | volatile uint32_t RX_ui32MsgCount = 0;
+      |                   ^
+CAN/Can.c(37): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   37 | volatile uint32_t RX_ui32MsgCount = 0;
+      |          ^
+CAN/Can.c(38): warning: no previous extern declaration for non-static variable 'g_bRXFlag' [-Wmissing-variable-declarations]
+   38 | volatile bool g_bRXFlag = 0;
+      |               ^
+CAN/Can.c(38): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   38 | volatile bool g_bRXFlag = 0;
+      |          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+CAN/Can.c(39): warning: no previous extern declaration for non-static variable 'TX_ErrFlag' [-Wmissing-variable-declarations]
+   39 | volatile bool TX_ErrFlag = 0;
+      |               ^
+CAN/Can.c(39): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   39 | volatile bool TX_ErrFlag = 0;
+      |          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+CAN/Can.c(40): warning: no previous extern declaration for non-static variable 'RX_ErrFlag' [-Wmissing-variable-declarations]
+   40 | volatile bool RX_ErrFlag = 0;
+      |               ^
+CAN/Can.c(40): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   40 | volatile bool RX_ErrFlag = 0;
+      |          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+CAN/Can.c(41): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   41 | void Can_Driv_init()
+      |                   ^
+      |                    void
+CAN/Can.c(64): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   64 | void Can_tx_check_voltage_config()
+      |                                 ^
+      |                                  void
+CAN/Can.c(81): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   81 | void Can_rx_check_voltage()
+      |                          ^
+      |                           void
+CAN/Can.c(103): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  103 | uint32_t can_recevie_msg_Async()
+      |                               ^
+      |                                void
+CAN/Can.c(113): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  113 | uint32_t can_recevie_volt_Async()
+      |                                ^
+      |                                 void
+CAN/Can.c(160): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  160 |             uint32_t recieved_data = can_recevie_msg_Async();
+      |                      ^
+CAN/Can.c(124): warning: no previous prototype for function 'CAN0_Handler' [-Wmissing-prototypes]
+  124 | void CAN0_Handler(void)
+      |      ^
+CAN/Can.c(124): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  124 | void CAN0_Handler(void)
+      | ^
+      | static 
+CAN/Can.c(26): warning: no previous extern declaration for non-static variable 'tx_msg' [-Wmissing-variable-declarations]
+   26 | tCANMsgObject tx_msg;
+      |               ^
+CAN/Can.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   26 | tCANMsgObject tx_msg;
+      | ^
+CAN/Can.c(27): warning: no previous extern declaration for non-static variable 'tx_data' [-Wmissing-variable-declarations]
+   27 | uint8_t tx_data;
+      |         ^
+CAN/Can.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   27 | uint8_t tx_data;
+      | ^
+CAN/Can.c(28): warning: no previous extern declaration for non-static variable 'rx_msg' [-Wmissing-variable-declarations]
+   28 | tCANMsgObject rx_msg;
+      |               ^
+CAN/Can.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   28 | tCANMsgObject rx_msg;
+      | ^
+CAN/Can.c(29): warning: no previous extern declaration for non-static variable 'rx_data' [-Wmissing-variable-declarations]
+   29 | uint8_t rx_data;
+      |         ^
+CAN/Can.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   29 | uint8_t rx_data;
+      | ^
+CAN/Can.c(30): warning: no previous extern declaration for non-static variable 'tx_volt_msg' [-Wmissing-variable-declarations]
+   30 | tCANMsgObject tx_volt_msg;
+      |               ^
+CAN/Can.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   30 | tCANMsgObject tx_volt_msg;
+      | ^
+CAN/Can.c(31): warning: no previous extern declaration for non-static variable 'tx_volt_data' [-Wmissing-variable-declarations]
+   31 | uint8_t tx_volt_data;
+      |         ^
+CAN/Can.c(31): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   31 | uint8_t tx_volt_data;
+      | ^
+CAN/Can.c(32): warning: no previous extern declaration for non-static variable 'rx_volt_msg' [-Wmissing-variable-declarations]
+   32 | tCANMsgObject rx_volt_msg;
+      |               ^
+CAN/Can.c(32): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   32 | tCANMsgObject rx_volt_msg;
+      | ^
+CAN/Can.c(33): warning: no previous extern declaration for non-static variable 'rx_volt_data' [-Wmissing-variable-declarations]
+   33 | uint8_t rx_volt_data;
+      |         ^
+CAN/Can.c(33): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   33 | uint8_t rx_volt_data;
+      | ^
+CAN/Can.c(34): warning: no previous extern declaration for non-static variable 'sending_flag' [-Wmissing-variable-declarations]
+   34 | uint8_t sending_flag;
+      |         ^
+CAN/Can.c(34): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   34 | uint8_t sending_flag;
+      | ^
+22 warnings generated.
+compiling Can.c...
+compiling system_TM4C123.c...
+OS/OS_backend.c(1): warning: In file included from...
+OS/OS.h(89): warning: no newline at end of file [-Wnewline-eof]
+   89 | #endif
+      |       ^
+OS/OS_backend.c(4): warning: In file included from...
+OS/../UART/uart_config.h(32): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   32 | void UART_INIT();
+      |               ^
+      |                void
+OS/OS_backend.c(9): warning: no previous extern declaration for non-static variable 'Glob_FaultState_Counter' [-Wmissing-variable-declarations]
+    9 | uint8_t Glob_FaultState_Counter = 0 ; 
+      |         ^
+OS/OS_backend.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+    9 | uint8_t Glob_FaultState_Counter = 0 ; 
+      | ^
+OS/OS_backend.c(10): warning: no previous extern declaration for non-static variable 'Glob_CommunicationLost_Counter' [-Wmissing-variable-declarations]
+   10 | uint8_t Glob_CommunicationLost_Counter = 0 ; 
+      |         ^
+OS/OS_backend.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   10 | uint8_t Glob_CommunicationLost_Counter = 0 ; 
+      | ^
+OS/OS_backend.c(11): warning: no previous extern declaration for non-static variable 'Glob_Overheated_Counter' [-Wmissing-variable-declarations]
+   11 | uint8_t Glob_Overheated_Counter = 0 ; 
+      |         ^
+OS/OS_backend.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   11 | uint8_t Glob_Overheated_Counter = 0 ; 
+      | ^
+OS/OS_backend.c(12): warning: no previous extern declaration for non-static variable 'get_voltage_counter' [-Wmissing-variable-declarations]
+   12 | uint8_t get_voltage_counter = 0;
+      |         ^
+OS/OS_backend.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   12 | uint8_t get_voltage_counter = 0;
+      | ^
+OS/OS_backend.c(14): warning: no previous extern declaration for non-static variable 'stateToString' [-Wmissing-variable-declarations]
+   14 | char stateToString[MAX_SysState_Count][30] = {"Fault State.\r\n", "Communication Lost.\r\n" , "Motor Overheated.\r\n" , "Normal.\r\n", "GET VOLTAGE ERROR.\r\n"};
+      |      ^
+OS/OS_backend.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   14 | char stateToString[MAX_SysState_Count][30] = {"Fault State.\r\n", "Communication Lost.\r\n" , "Motor Overheated.\r\n" , "Normal.\r\n", "GET VOLTAGE ERROR.\r\n"};
+      | ^
+OS/OS_backend.c(126): warning: code will never be executed [-Wunreachable-code]
+  126 |     retVal = E_OK ; 
+      |              ^~~~
+OS/OS_backend.c(110): warning: code will never be executed [-Wunreachable-code]
+  110 |     retVal = E_OK ;        
+      |              ^~~~
+OS/OS_backend.c(210): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  210 |                                 PacketToPc.avgTemperature = getTemperature ; 
+      |                                                           ~ ^~~~~~~~~~~~~~
+OS/OS_backend.c(229): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  229 |                                 PacketToPc.avgTemperature = getTemperature ; 
+      |                                                           ~ ^~~~~~~~~~~~~~
+OS/OS_backend.c(239): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  239 |                         PacketToPc.avgTemperature = getTemperature ; 
+      |                                                   ~ ^~~~~~~~~~~~~~
+OS/OS_backend.c(183): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  183 |     ReturnState retVal = APP_CheckTemperature((uint8_t)getTemperature);
+      |                 ^
+OS/OS_backend.c(246): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  246 | void normal_condition_check()
+      |                            ^
+      |                             void
+OS/OS_backend.c(282): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  282 | void DTC_Error_check()
+      |                     ^
+      |                      void
+OS/OS_backend.c(298): warning: unused variable 'retVal' [-Wunused-variable]
+  298 |   ReturnState retVal = E_NOT_OK;
+      |               ^~~~~~
+OS/OS_backend.c(13): warning: no previous extern declaration for non-static variable 'mainIRQs' [-Wmissing-variable-declarations]
+   13 | IRQ_Handling mainIRQs[MAX_IRQ_HANDLING] ; 
+      |              ^
+OS/OS_backend.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   13 | IRQ_Handling mainIRQs[MAX_IRQ_HANDLING] ; 
+      | ^
+OS/OS_backend.c(15): warning: no previous extern declaration for non-static variable 'PacketToPc' [-Wmissing-variable-declarations]
+   15 | Packet PacketToPc ; 
+      |        ^
+OS/OS_backend.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   15 | Packet PacketToPc ; 
+      | ^
+OS/OS_backend.c(30): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   30 |   UART_Send_string(stateToString[PacketToPc.copySystemState]);
+      |                    ^~~~~~~~~~~~~
+OS/OS_backend.c(57): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   57 |       TempOverBoundries[i] = 0 ; 
+      |       ^~~~~~~~~~~~~~~~~
+OS/OS_backend.c(60): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   60 |     mainIRQs[IRQ_OVERHEATED] = 0 ; 
+      |     ^~~~~~~~
+OS/OS_backend.c(65): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   65 |     TempOverBoundries[TempOverBoundries_Counter] = 1 ;
+      |     ^~~~~~~~~~~~~~~~~
+OS/OS_backend.c(67): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   67 |     if(TempOverBoundries_Counter >= ERROR_IN_TEMP_READINGS_MARGIN || mainIRQs[IRQ_OVERHEATED] == 1)
+      |                                                                      ^~~~~~~~
+OS/OS_backend.c(72): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   72 |       mainIRQs[IRQ_OVERHEATED] = 1 ;
+      |       ^~~~~~~~
+OS/OS_backend.c(93): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   93 |                 while(mainIRQs[IRQ_COMM_LOST]!=0){
+      |                       ^~~~~~~~
+OS/OS_backend.c(144): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  144 |     mainIRQs[IRQ_ALIVE_ACK] =  1 ; 
+      |     ^~~~~~~~
+OS/OS_backend.c(155): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  155 |   if(mainIRQs[IRQ_ALIVE_ACK] == 1)
+      |      ^~~~~~~~
+OS/OS_backend.c(158): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  158 |     mainIRQs[IRQ_COMM_LOST] = 1 ;
+      |     ^~~~~~~~
+OS/OS_backend.c(163): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  163 |     mainIRQs[IRQ_ALIVE_ACK] = 0 ; 
+      |     ^~~~~~~~
+OS/OS_backend.c(164): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  164 |     mainIRQs[IRQ_COMM_LOST] = 0 ;
+      |     ^~~~~~~~
+OS/OS_backend.c(178): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  178 |   if(mainIRQs[IRQ_RECEIVED_TEMP_FROM_CAN] == 1 )
+      |      ^~~~~~~~
+OS/OS_backend.c(181): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  181 |     mainIRQs[IRQ_RECEIVED_TEMP_FROM_CAN] = 0 ; 
+      |     ^~~~~~~~
+OS/OS_backend.c(207): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  207 |                                 mainIRQs[IRQ_FAULT] = 0 ; 
+      |                                 ^~~~~~~~
+OS/OS_backend.c(208): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  208 |                                 mainIRQs[IRQ_OVERHEATED] = 1 ;
+      |                                 ^~~~~~~~
+OS/OS_backend.c(225): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  225 |                                 mainIRQs[IRQ_OVERHEATED] = 0 ; 
+      |                                 ^~~~~~~~
+OS/OS_backend.c(226): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  226 |                                 mainIRQs[IRQ_FAULT] = 1 ; 
+      |                                 ^~~~~~~~
+OS/OS_backend.c(253): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  253 |   if(mainIRQs[IRQ_OVERHEATED] == 0 && mainIRQs[IRQ_FAULT] == 0  &&
+      |      ^~~~~~~~
+OS/OS_backend.c(253): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  253 |   if(mainIRQs[IRQ_OVERHEATED] == 0 && mainIRQs[IRQ_FAULT] == 0  &&
+      |                                       ^~~~~~~~
+OS/OS_backend.c(254): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  254 |                                     ((mainIRQs[IRQ_ALIVE_ACK] == 0 && mainIRQs[IRQ_COMM_LOST] == 0) || 
+      |                                       ^~~~~~~~
+OS/OS_backend.c(254): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  254 |                                     ((mainIRQs[IRQ_ALIVE_ACK] == 0 && mainIRQs[IRQ_COMM_LOST] == 0) || 
+      |                                                                       ^~~~~~~~
+OS/OS_backend.c(255): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  255 |                                     (mainIRQs[IRQ_ALIVE_ACK] == 1 && mainIRQs[IRQ_COMM_LOST] == 0) ))
+      |                                      ^~~~~~~~
+OS/OS_backend.c(255): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  255 |                                     (mainIRQs[IRQ_ALIVE_ACK] == 1 && mainIRQs[IRQ_COMM_LOST] == 0) ))
+      |                                                                      ^~~~~~~~
+OS/OS_backend.c(267): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  267 |         if(mainIRQs[IRQ_ALIVE_ACK] == 1 && mainIRQs[IRQ_COMM_LOST] == 1)
+      |            ^~~~~~~~
+OS/OS_backend.c(267): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  267 |         if(mainIRQs[IRQ_ALIVE_ACK] == 1 && mainIRQs[IRQ_COMM_LOST] == 1)
+      |                                            ^~~~~~~~
+OS/OS_backend.c(304): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  304 |     mainIRQs[IRQ_COMM_LOST]=0;
+      |     ^~~~~~~~
+OS/OS_backend.c(305): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  305 |     mainIRQs[IRQ_ALIVE_ACK]=0;
+      |     ^~~~~~~~
+OS/OS_backend.c(311): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  311 |       mainIRQs[IRQ_RECEIVED_TEMP_FROM_CAN] = 1 ; 
+      |       ^~~~~~~~
+OS/OS_backend.c(312): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  312 |                     mainIRQs[IRQ_COMM_LOST]=0;
+      |                     ^~~~~~~~
+OS/OS_backend.c(313): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  313 |     mainIRQs[IRQ_ALIVE_ACK]=0;
+      |     ^~~~~~~~
+49 warnings generated.
+compiling OS_backend.c...
+UART/uart_config.c(3): warning: non-portable path to file '"TM4C123GH6PM.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+    3 | #include "tm4c123gh6pm.h"
+      |          ^~~~~~~~~~~~~~~~
+      |          "TM4C123GH6PM.h"
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(51): warning: 'WATCHDOG0_BASE' macro redefined [-Wmacro-redefined]
+   51 | #define WATCHDOG0_BASE          0x40000000  // Watchdog0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1543): note: previous definition is here
+ 1543 | #define WATCHDOG0_BASE                  0x40000000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(52): warning: 'WATCHDOG1_BASE' macro redefined [-Wmacro-redefined]
+   52 | #define WATCHDOG1_BASE          0x40001000  // Watchdog1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1544): note: previous definition is here
+ 1544 | #define WATCHDOG1_BASE                  0x40001000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(57): warning: 'SSI0_BASE' macro redefined [-Wmacro-redefined]
+   57 | #define SSI0_BASE               0x40008000  // SSI0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1549): note: previous definition is here
+ 1549 | #define SSI0_BASE                       0x40008000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(58): warning: 'SSI1_BASE' macro redefined [-Wmacro-redefined]
+   58 | #define SSI1_BASE               0x40009000  // SSI1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1550): note: previous definition is here
+ 1550 | #define SSI1_BASE                       0x40009000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(59): warning: 'SSI2_BASE' macro redefined [-Wmacro-redefined]
+   59 | #define SSI2_BASE               0x4000A000  // SSI2
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1551): note: previous definition is here
+ 1551 | #define SSI2_BASE                       0x4000A000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(60): warning: 'SSI3_BASE' macro redefined [-Wmacro-redefined]
+   60 | #define SSI3_BASE               0x4000B000  // SSI3
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1552): note: previous definition is here
+ 1552 | #define SSI3_BASE                       0x4000B000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(61): warning: 'UART0_BASE' macro redefined [-Wmacro-redefined]
+   61 | #define UART0_BASE              0x4000C000  // UART0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1553): note: previous definition is here
+ 1553 | #define UART0_BASE                      0x4000C000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(62): warning: 'UART1_BASE' macro redefined [-Wmacro-redefined]
+   62 | #define UART1_BASE              0x4000D000  // UART1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1554): note: previous definition is here
+ 1554 | #define UART1_BASE                      0x4000D000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(63): warning: 'UART2_BASE' macro redefined [-Wmacro-redefined]
+   63 | #define UART2_BASE              0x4000E000  // UART2
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1555): note: previous definition is here
+ 1555 | #define UART2_BASE                      0x4000E000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(64): warning: 'UART3_BASE' macro redefined [-Wmacro-redefined]
+   64 | #define UART3_BASE              0x4000F000  // UART3
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1556): note: previous definition is here
+ 1556 | #define UART3_BASE                      0x4000F000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(65): warning: 'UART4_BASE' macro redefined [-Wmacro-redefined]
+   65 | #define UART4_BASE              0x40010000  // UART4
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1557): note: previous definition is here
+ 1557 | #define UART4_BASE                      0x40010000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(66): warning: 'UART5_BASE' macro redefined [-Wmacro-redefined]
+   66 | #define UART5_BASE              0x40011000  // UART5
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1558): note: previous definition is here
+ 1558 | #define UART5_BASE                      0x40011000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(67): warning: 'UART6_BASE' macro redefined [-Wmacro-redefined]
+   67 | #define UART6_BASE              0x40012000  // UART6
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1559): note: previous definition is here
+ 1559 | #define UART6_BASE                      0x40012000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(68): warning: 'UART7_BASE' macro redefined [-Wmacro-redefined]
+   68 | #define UART7_BASE              0x40013000  // UART7
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1560): note: previous definition is here
+ 1560 | #define UART7_BASE                      0x40013000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(69): warning: 'I2C0_BASE' macro redefined [-Wmacro-redefined]
+   69 | #define I2C0_BASE               0x40020000  // I2C0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1561): note: previous definition is here
+ 1561 | #define I2C0_BASE                       0x40020000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(70): warning: 'I2C1_BASE' macro redefined [-Wmacro-redefined]
+   70 | #define I2C1_BASE               0x40021000  // I2C1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1562): note: previous definition is here
+ 1562 | #define I2C1_BASE                       0x40021000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(71): warning: 'I2C2_BASE' macro redefined [-Wmacro-redefined]
+   71 | #define I2C2_BASE               0x40022000  // I2C2
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1563): note: previous definition is here
+ 1563 | #define I2C2_BASE                       0x40022000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(72): warning: 'I2C3_BASE' macro redefined [-Wmacro-redefined]
+   72 | #define I2C3_BASE               0x40023000  // I2C3
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1564): note: previous definition is here
+ 1564 | #define I2C3_BASE                       0x40023000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(77): warning: 'PWM0_BASE' macro redefined [-Wmacro-redefined]
+   77 | #define PWM0_BASE               0x40028000  // Pulse Width Modulator (PWM)
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1567): note: previous definition is here
+ 1567 | #define PWM0_BASE                       0x40028000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(78): warning: 'PWM1_BASE' macro redefined [-Wmacro-redefined]
+   78 | #define PWM1_BASE               0x40029000  // Pulse Width Modulator (PWM)
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1568): note: previous definition is here
+ 1568 | #define PWM1_BASE                       0x40029000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(79): warning: 'QEI0_BASE' macro redefined [-Wmacro-redefined]
+   79 | #define QEI0_BASE               0x4002C000  // QEI0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1569): note: previous definition is here
+ 1569 | #define QEI0_BASE                       0x4002C000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(80): warning: 'QEI1_BASE' macro redefined [-Wmacro-redefined]
+   80 | #define QEI1_BASE               0x4002D000  // QEI1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1570): note: previous definition is here
+ 1570 | #define QEI1_BASE                       0x4002D000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(81): warning: 'TIMER0_BASE' macro redefined [-Wmacro-redefined]
+   81 | #define TIMER0_BASE             0x40030000  // Timer0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1571): note: previous definition is here
+ 1571 | #define TIMER0_BASE                     0x40030000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(82): warning: 'TIMER1_BASE' macro redefined [-Wmacro-redefined]
+   82 | #define TIMER1_BASE             0x40031000  // Timer1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1572): note: previous definition is here
+ 1572 | #define TIMER1_BASE                     0x40031000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(83): warning: 'TIMER2_BASE' macro redefined [-Wmacro-redefined]
+   83 | #define TIMER2_BASE             0x40032000  // Timer2
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1573): note: previous definition is here
+ 1573 | #define TIMER2_BASE                     0x40032000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(84): warning: 'TIMER3_BASE' macro redefined [-Wmacro-redefined]
+   84 | #define TIMER3_BASE             0x40033000  // Timer3
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1574): note: previous definition is here
+ 1574 | #define TIMER3_BASE                     0x40033000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(85): warning: 'TIMER4_BASE' macro redefined [-Wmacro-redefined]
+   85 | #define TIMER4_BASE             0x40034000  // Timer4
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1575): note: previous definition is here
+ 1575 | #define TIMER4_BASE                     0x40034000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(86): warning: 'TIMER5_BASE' macro redefined [-Wmacro-redefined]
+   86 | #define TIMER5_BASE             0x40035000  // Timer5
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1576): note: previous definition is here
+ 1576 | #define TIMER5_BASE                     0x40035000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(87): warning: 'WTIMER0_BASE' macro redefined [-Wmacro-redefined]
+   87 | #define WTIMER0_BASE            0x40036000  // Wide Timer0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1577): note: previous definition is here
+ 1577 | #define WTIMER0_BASE                    0x40036000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(88): warning: 'WTIMER1_BASE' macro redefined [-Wmacro-redefined]
+   88 | #define WTIMER1_BASE            0x40037000  // Wide Timer1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1578): note: previous definition is here
+ 1578 | #define WTIMER1_BASE                    0x40037000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(89): warning: 'ADC0_BASE' macro redefined [-Wmacro-redefined]
+   89 | #define ADC0_BASE               0x40038000  // ADC0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1579): note: previous definition is here
+ 1579 | #define ADC0_BASE                       0x40038000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(90): warning: 'ADC1_BASE' macro redefined [-Wmacro-redefined]
+   90 | #define ADC1_BASE               0x40039000  // ADC1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1580): note: previous definition is here
+ 1580 | #define ADC1_BASE                       0x40039000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(91): warning: 'COMP_BASE' macro redefined [-Wmacro-redefined]
+   91 | #define COMP_BASE               0x4003C000  // Analog comparators
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1581): note: previous definition is here
+ 1581 | #define COMP_BASE                       0x4003C000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(93): warning: 'CAN0_BASE' macro redefined [-Wmacro-redefined]
+   93 | #define CAN0_BASE               0x40040000  // CAN0
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1582): note: previous definition is here
+ 1582 | #define CAN0_BASE                       0x40040000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(94): warning: 'CAN1_BASE' macro redefined [-Wmacro-redefined]
+   94 | #define CAN1_BASE               0x40041000  // CAN1
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1583): note: previous definition is here
+ 1583 | #define CAN1_BASE                       0x40041000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(95): warning: 'WTIMER2_BASE' macro redefined [-Wmacro-redefined]
+   95 | #define WTIMER2_BASE            0x4004C000  // Wide Timer2
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1584): note: previous definition is here
+ 1584 | #define WTIMER2_BASE                    0x4004C000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(96): warning: 'WTIMER3_BASE' macro redefined [-Wmacro-redefined]
+   96 | #define WTIMER3_BASE            0x4004D000  // Wide Timer3
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1585): note: previous definition is here
+ 1585 | #define WTIMER3_BASE                    0x4004D000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(97): warning: 'WTIMER4_BASE' macro redefined [-Wmacro-redefined]
+   97 | #define WTIMER4_BASE            0x4004E000  // Wide Timer4
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1586): note: previous definition is here
+ 1586 | #define WTIMER4_BASE                    0x4004E000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(98): warning: 'WTIMER5_BASE' macro redefined [-Wmacro-redefined]
+   98 | #define WTIMER5_BASE            0x4004F000  // Wide Timer5
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1587): note: previous definition is here
+ 1587 | #define WTIMER5_BASE                    0x4004F000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(99): warning: 'USB0_BASE' macro redefined [-Wmacro-redefined]
+   99 | #define USB0_BASE               0x40050000  // USB 0 Controller
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1588): note: previous definition is here
+ 1588 | #define USB0_BASE                       0x40050000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(121): warning: 'EEPROM_BASE' macro redefined [-Wmacro-redefined]
+  121 | #define EEPROM_BASE             0x400AF000  // EEPROM memory
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1595): note: previous definition is here
+ 1595 | #define EEPROM_BASE                     0x400AF000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(133): warning: 'SYSEXC_BASE' macro redefined [-Wmacro-redefined]
+  133 | #define SYSEXC_BASE             0x400F9000  // System Exception Module
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1596): note: previous definition is here
+ 1596 | #define SYSEXC_BASE                     0x400F9000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(134): warning: 'HIB_BASE' macro redefined [-Wmacro-redefined]
+  134 | #define HIB_BASE                0x400FC000  // Hibernation Module
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1597): note: previous definition is here
+ 1597 | #define HIB_BASE                        0x400FC000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(135): warning: 'FLASH_CTRL_BASE' macro redefined [-Wmacro-redefined]
+  135 | #define FLASH_CTRL_BASE         0x400FD000  // FLASH Controller
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1598): note: previous definition is here
+ 1598 | #define FLASH_CTRL_BASE                 0x400FD000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(136): warning: 'SYSCTL_BASE' macro redefined [-Wmacro-redefined]
+  136 | #define SYSCTL_BASE             0x400FE000  // System Control
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1599): note: previous definition is here
+ 1599 | #define SYSCTL_BASE                     0x400FE000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(137): warning: 'UDMA_BASE' macro redefined [-Wmacro-redefined]
+  137 | #define UDMA_BASE               0x400FF000  // uDMA Controller
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\tm4c123gh6pm.h(1600): note: previous definition is here
+ 1600 | #define UDMA_BASE                       0x400FF000UL
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(145): warning: 'ITM_BASE' macro redefined [-Wmacro-redefined]
+  145 | #define ITM_BASE                0xE0000000  // Instrumentation Trace Macrocell
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1551): note: previous definition is here
+ 1551 | #define ITM_BASE            (0xE0000000UL)                            /*!< ITM Base Address */
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(146): warning: 'DWT_BASE' macro redefined [-Wmacro-redefined]
+  146 | #define DWT_BASE                0xE0001000  // Data Watchpoint and Trace
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1552): note: previous definition is here
+ 1552 | #define DWT_BASE            (0xE0001000UL)                            /*!< DWT Base Address */
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(148): warning: 'NVIC_BASE' macro redefined [-Wmacro-redefined]
+  148 | #define NVIC_BASE               0xE000E000  // Nested Vectored Interrupt Ctrl
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1556): note: previous definition is here
+ 1556 | #define NVIC_BASE           (SCS_BASE +  0x0100UL)                    /*!< NVIC Base Address */
+      |         ^
+UART/uart_config.c(4): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h(149): warning: 'TPIU_BASE' macro redefined [-Wmacro-redefined]
+  149 | #define TPIU_BASE               0xE0040000  // Trace Port Interface Unit
+      |         ^
+C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1553): note: previous definition is here
+ 1553 | #define TPIU_BASE           (0xE0040000UL)                            /*!< TPIU Base Address */
+      |         ^
+UART/uart_config.c(11): warning: In file included from...
+UART/uart_config.h(32): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   32 | void UART_INIT();
+      |               ^
+      |                void
+UART/uart_config.c(30): warning: no previous prototype for function 'UART_INIT' [-Wmissing-prototypes]
+   30 | void UART_INIT(void)
+      |      ^
+UART/uart_config.h(32): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+   32 | void UART_INIT();
+      |      ^         
+      |                void
+UART/uart_config.c(45): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   45 |     for (int i=0; data[i]!= '\0'; i++)
+      |                   ^~~~
+UART/uart_config.c(47): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   47 |         UARTCharPut(Uart_base,data[i]);
+      |                               ^~~~
+55 warnings generated.
+compiling uart_config.c...
+linking...
+Program Size: Code=12698 RO-data=2738 RW-data=1644 ZI-data=712  
+".\Objects\ECU1_TEST.axf" - 0 Error(s), 140 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  C:/Users/Mahmoud Hussein/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: Keil::Device:Startup@1.0.1
+      Source file:   Device/Source/system_TM4C123.c
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
